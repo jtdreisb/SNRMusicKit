@@ -30,7 +30,7 @@ extern const struct SMKiTunesPlaylistFetchedProperties {
 
 
 
-@property (nonatomic, strong) NSOrderedSet* tracks;
+@property (nonatomic, strong) NSOrderedSet *tracks;
 
 - (NSMutableOrderedSet*)tracksSet;
 

@@ -19,8 +19,7 @@
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
     NSString *credentialsFolder = [[NSHomeDirectory() stringByAppendingPathComponent:@"Desktop"] stringByAppendingPathComponent:@"credentials"];
-    NSString *username = [NSString stringWithContentsOfFile:[credentialsFolder stringByAppendingPathComponent:@"spotify_username.txt"] encoding:NSUTF8StringEncoding error:nil];
-    NSString *password = [NSString stringWithContentsOfFile:[credentialsFolder stringByAppendingPathComponent:@"spotify_password.txt"] encoding:NSUTF8StringEncoding error:nil];
+
     NSData *key = [NSData dataWithContentsOfFile:[credentialsFolder stringByAppendingPathComponent:@"spotify_appkey.key"]];
     _source = [[SMKSpotifyContentSource alloc] initWithApplicationKey:key userAgent:@"com.indragie.SNRMusicKit" loadingPolicy:SPAsyncLoadingImmediate error:nil];
     [_source attemptLoginWithUserName:username password:password];

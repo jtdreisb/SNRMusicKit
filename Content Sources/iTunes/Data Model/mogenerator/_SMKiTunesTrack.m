@@ -51,36 +51,43 @@ const struct SMKiTunesTrackFetchedProperties SMKiTunesTrackFetchedProperties = {
 	return (SMKiTunesTrackID*)[super objectID];
 }
 
-+ (NSSet *)keyPathsForValuesAffectingValueForKey:(NSString *)key {
++ (NSSet*)keyPathsForValuesAffectingValueForKey:(NSString*)key {
 	NSSet *keyPaths = [super keyPathsForValuesAffectingValueForKey:key];
 	
 	if ([key isEqualToString:@"cd_compilationValue"]) {
 		NSSet *affectingKey = [NSSet setWithObject:@"cd_compilation"];
 		keyPaths = [keyPaths setByAddingObjectsFromSet:affectingKey];
+		return keyPaths;
 	}
 	if ([key isEqualToString:@"cd_discNumberValue"]) {
 		NSSet *affectingKey = [NSSet setWithObject:@"cd_discNumber"];
 		keyPaths = [keyPaths setByAddingObjectsFromSet:affectingKey];
+		return keyPaths;
 	}
 	if ([key isEqualToString:@"cd_durationValue"]) {
 		NSSet *affectingKey = [NSSet setWithObject:@"cd_duration"];
 		keyPaths = [keyPaths setByAddingObjectsFromSet:affectingKey];
+		return keyPaths;
 	}
 	if ([key isEqualToString:@"cd_isCleanValue"]) {
 		NSSet *affectingKey = [NSSet setWithObject:@"cd_isClean"];
 		keyPaths = [keyPaths setByAddingObjectsFromSet:affectingKey];
+		return keyPaths;
 	}
 	if ([key isEqualToString:@"cd_isExplicitValue"]) {
 		NSSet *affectingKey = [NSSet setWithObject:@"cd_isExplicit"];
 		keyPaths = [keyPaths setByAddingObjectsFromSet:affectingKey];
+		return keyPaths;
 	}
 	if ([key isEqualToString:@"cd_ratingValue"]) {
 		NSSet *affectingKey = [NSSet setWithObject:@"cd_rating"];
 		keyPaths = [keyPaths setByAddingObjectsFromSet:affectingKey];
+		return keyPaths;
 	}
 	if ([key isEqualToString:@"cd_trackNumberValue"]) {
 		NSSet *affectingKey = [NSSet setWithObject:@"cd_trackNumber"];
 		keyPaths = [keyPaths setByAddingObjectsFromSet:affectingKey];
+		return keyPaths;
 	}
 
 	return keyPaths;

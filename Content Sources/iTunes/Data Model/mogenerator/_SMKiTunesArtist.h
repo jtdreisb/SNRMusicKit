@@ -30,7 +30,7 @@ extern const struct SMKiTunesArtistFetchedProperties {
 
 
 
-@property (nonatomic, strong) NSSet* albums;
+@property (nonatomic, strong) NSSet *albums;
 
 - (NSMutableSet*)albumsSet;
 

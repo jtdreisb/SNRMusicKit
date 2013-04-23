@@ -40,20 +40,23 @@ const struct SMKiTunesAlbumFetchedProperties SMKiTunesAlbumFetchedProperties = {
 	return (SMKiTunesAlbumID*)[super objectID];
 }
 
-+ (NSSet *)keyPathsForValuesAffectingValueForKey:(NSString *)key {
++ (NSSet*)keyPathsForValuesAffectingValueForKey:(NSString*)key {
 	NSSet *keyPaths = [super keyPathsForValuesAffectingValueForKey:key];
 	
 	if ([key isEqualToString:@"cd_isCompilationValue"]) {
 		NSSet *affectingKey = [NSSet setWithObject:@"cd_isCompilation"];
 		keyPaths = [keyPaths setByAddingObjectsFromSet:affectingKey];
+		return keyPaths;
 	}
 	if ([key isEqualToString:@"cd_ratingValue"]) {
 		NSSet *affectingKey = [NSSet setWithObject:@"cd_rating"];
 		keyPaths = [keyPaths setByAddingObjectsFromSet:affectingKey];
+		return keyPaths;
 	}
 	if ([key isEqualToString:@"cd_releaseYearValue"]) {
 		NSSet *affectingKey = [NSSet setWithObject:@"cd_releaseYear"];
 		keyPaths = [keyPaths setByAddingObjectsFromSet:affectingKey];
+		return keyPaths;
 	}
 
 	return keyPaths;

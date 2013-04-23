@@ -59,7 +59,9 @@ extern const struct SMKiTunesTrackFetchedProperties {
 
 
 
+
 @property (nonatomic, strong) NSString* albumArtistName;
+
 
 
 //- (BOOL)validateAlbumArtistName:(id*)value_ error:(NSError**)error_;
@@ -67,7 +69,9 @@ extern const struct SMKiTunesTrackFetchedProperties {
 
 
 
+
 @property (nonatomic, strong) NSString* artistName;
+
 
 
 //- (BOOL)validateArtistName:(id*)value_ error:(NSError**)error_;
@@ -75,7 +79,9 @@ extern const struct SMKiTunesTrackFetchedProperties {
 
 
 
+
 @property (nonatomic, strong) NSData* bookmark;
+
 
 
 //- (BOOL)validateBookmark:(id*)value_ error:(NSError**)error_;
@@ -83,7 +89,9 @@ extern const struct SMKiTunesTrackFetchedProperties {
 
 
 
+
 @property (nonatomic, strong) NSNumber* cd_compilation;
+
 
 
 @property BOOL cd_compilationValue;
@@ -95,7 +103,9 @@ extern const struct SMKiTunesTrackFetchedProperties {
 
 
 
+
 @property (nonatomic, strong) NSNumber* cd_discNumber;
+
 
 
 @property int32_t cd_discNumberValue;
@@ -107,7 +117,9 @@ extern const struct SMKiTunesTrackFetchedProperties {
 
 
 
+
 @property (nonatomic, strong) NSNumber* cd_duration;
+
 
 
 @property float cd_durationValue;
@@ -119,7 +131,9 @@ extern const struct SMKiTunesTrackFetchedProperties {
 
 
 
+
 @property (nonatomic, strong) NSNumber* cd_isClean;
+
 
 
 @property BOOL cd_isCleanValue;
@@ -131,7 +145,9 @@ extern const struct SMKiTunesTrackFetchedProperties {
 
 
 
+
 @property (nonatomic, strong) NSNumber* cd_isExplicit;
+
 
 
 @property BOOL cd_isExplicitValue;
@@ -143,7 +159,9 @@ extern const struct SMKiTunesTrackFetchedProperties {
 
 
 
+
 @property (nonatomic, strong) NSNumber* cd_rating;
+
 
 
 @property int32_t cd_ratingValue;
@@ -155,7 +173,9 @@ extern const struct SMKiTunesTrackFetchedProperties {
 
 
 
+
 @property (nonatomic, strong) NSNumber* cd_trackNumber;
+
 
 
 @property int32_t cd_trackNumberValue;
@@ -167,7 +187,9 @@ extern const struct SMKiTunesTrackFetchedProperties {
 
 
 
+
 @property (nonatomic, strong) NSString* composer;
+
 
 
 //- (BOOL)validateComposer:(id*)value_ error:(NSError**)error_;
@@ -175,7 +197,9 @@ extern const struct SMKiTunesTrackFetchedProperties {
 
 
 
+
 @property (nonatomic, strong) NSDate* dateAdded;
+
 
 
 //- (BOOL)validateDateAdded:(id*)value_ error:(NSError**)error_;
@@ -183,7 +207,9 @@ extern const struct SMKiTunesTrackFetchedProperties {
 
 
 
+
 @property (nonatomic, strong) NSDate* dateModified;
+
 
 
 //- (BOOL)validateDateModified:(id*)value_ error:(NSError**)error_;
@@ -191,7 +217,9 @@ extern const struct SMKiTunesTrackFetchedProperties {
 
 
 
+
 @property (nonatomic, strong) NSString* genre;
+
 
 
 //- (BOOL)validateGenre:(id*)value_ error:(NSError**)error_;
@@ -200,14 +228,14 @@ extern const struct SMKiTunesTrackFetchedProperties {
 
 
 
-@property (nonatomic, strong) SMKiTunesAlbum* album;
+@property (nonatomic, strong) SMKiTunesAlbum *album;
 
 //- (BOOL)validateAlbum:(id*)value_ error:(NSError**)error_;
 
 
 
 
-@property (nonatomic, strong) NSSet* playlists;
+@property (nonatomic, strong) NSSet *playlists;
 
 - (NSMutableSet*)playlistsSet;
 

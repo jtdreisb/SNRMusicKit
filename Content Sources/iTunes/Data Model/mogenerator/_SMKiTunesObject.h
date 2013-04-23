@@ -35,7 +35,9 @@ extern const struct SMKiTunesObjectFetchedProperties {
 
 
 
+
 @property (nonatomic, strong) NSString* identifier;
+
 
 
 //- (BOOL)validateIdentifier:(id*)value_ error:(NSError**)error_;
@@ -43,7 +45,9 @@ extern const struct SMKiTunesObjectFetchedProperties {
 
 
 
+
 @property (nonatomic, strong) NSString* name;
+
 
 
 //- (BOOL)validateName:(id*)value_ error:(NSError**)error_;
@@ -51,7 +55,9 @@ extern const struct SMKiTunesObjectFetchedProperties {
 
 
 
+
 @property (nonatomic, strong) NSString* normalizedName;
+
 
 
 //- (BOOL)validateNormalizedName:(id*)value_ error:(NSError**)error_;
@@ -60,7 +66,7 @@ extern const struct SMKiTunesObjectFetchedProperties {
 
 
 
-@property (nonatomic, strong) NSSet* keywords;
+@property (nonatomic, strong) NSSet *keywords;
 
 - (NSMutableSet*)keywordsSet;
 

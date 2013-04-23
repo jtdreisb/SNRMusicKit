@@ -37,7 +37,9 @@ extern const struct SMKiTunesAlbumFetchedProperties {
 
 
 
+
 @property (nonatomic, strong) NSNumber* cd_isCompilation;
+
 
 
 @property BOOL cd_isCompilationValue;
@@ -49,7 +51,9 @@ extern const struct SMKiTunesAlbumFetchedProperties {
 
 
 
+
 @property (nonatomic, strong) NSNumber* cd_rating;
+
 
 
 @property int32_t cd_ratingValue;
@@ -61,7 +65,9 @@ extern const struct SMKiTunesAlbumFetchedProperties {
 
 
 
+
 @property (nonatomic, strong) NSNumber* cd_releaseYear;
+
 
 
 @property int32_t cd_releaseYearValue;
@@ -74,14 +80,14 @@ extern const struct SMKiTunesAlbumFetchedProperties {
 
 
 
-@property (nonatomic, strong) SMKiTunesArtist* artist;
+@property (nonatomic, strong) SMKiTunesArtist *artist;
 
 //- (BOOL)validateArtist:(id*)value_ error:(NSError**)error_;
 
 
 
 
-@property (nonatomic, strong) NSSet* tracks;
+@property (nonatomic, strong) NSSet *tracks;
 
 - (NSMutableSet*)tracksSet;
 

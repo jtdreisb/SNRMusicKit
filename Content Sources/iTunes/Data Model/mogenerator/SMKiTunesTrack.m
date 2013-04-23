@@ -3,6 +3,8 @@
 
 @implementation SMKiTunesTrack
 
+@synthesize genre;
+
 - (id<SMKArtist>)artist
 {
     return [self.album artist];
